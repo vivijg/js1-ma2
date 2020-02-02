@@ -47,6 +47,15 @@ button2.addEventListener("mouseout", dogAnimal);
 
 //task 6
 
+const listObjects = document.querySelectorAll("li");
+
+for(let i = 0; i < listObjects.length; i++) {
+    listObjects[i].addEventListener("mouseover", handleActiveClass);
+}
+
+function handleActiveClass(event) {
+    console.log(event.target.dataset.animal);
+}
 
 
 
